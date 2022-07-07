@@ -1,0 +1,66 @@
+.ready__heading {
+  width: 445px;
+  height: 56px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536B;
+}
+
+.ready {
+  padding-bottom: 96px;
+}
+
+.ready__inner-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@include breakpoint-down(915px) {
+  .ready__heading{
+    text-align: center;
+    width: 320px;
+  }
+  
+  .services__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services__item {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero__input {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ready__inner-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__input::placeholder {
+    padding-left: 50px;
+  }
+
+  .hero__button {
+    margin-top: 30px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

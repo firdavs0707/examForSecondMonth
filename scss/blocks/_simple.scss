@@ -1,0 +1,121 @@
+.container__inner-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.simple {
+  background-color: #EDF3F8;
+  padding-top: 160px;
+  background-image: url("../../img/chet.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding-bottom: 160px;
+}
+
+.simple__images {
+  display: flex;
+}
+
+.simple__img {
+  display: block;
+  margin-right: 50px;
+  border-radius: 30px;
+}
+
+.simple__img--last {
+  display: block;
+  margin-right: 0px;
+
+  border-radius: 30px;
+}
+
+.simple__heading{
+  font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+}
+
+.simple__text {
+  max-width: 400px;
+  height: 56px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+}
+
+@include breakpoint-down(1100px) {
+  .container__inner-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .simple__heading {
+    text-align: center;
+  }
+
+  .simple__text {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .simple{
+    padding-top: 20px;
+    background-image: url("");
+  }
+
+  .simple__images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include breakpoint-down(600px) {
+  .simple__img {
+    width: 150px;
+    height: 290px;
+    border-radius: 10px;
+  }
+
+  .simple__img--last {
+    width: 150px;
+    height: 290px;
+    border-radius: 10px;
+  }
+
+  .simple__heading {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.276923px;
+    color: #36536B;
+  }
+}
+
+@include breakpoint-down(400px) {
+  .simple__img {
+    width: 120px;
+    height: 250px;
+  }
+
+  .simple__img--last {
+    width: 120px;
+    height: 250px;
+  }
+
+  .simple {
+    padding-bottom: 50px;
+  }
+}

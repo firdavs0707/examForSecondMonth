@@ -1,0 +1,153 @@
+.intro{
+  background-color: #1B262F;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background-image: url("../../img/ciecle-2.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.container__inner-intro{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro__heading{
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #FBFCFE;
+}
+
+.intro__links{
+  width: 540px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.intro__links--last{
+  width: 540px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+.intro__text {
+  height: 112px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FBFCFE;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  max-width: 405px;
+}
+
+.intro__componies{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -90px;
+}
+
+.intro__button {
+  width: 129px;
+  height: 18px;
+  background-color: #1F2C38;
+  padding: 15px 32px 30px 32px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #FBFCFE;
+  border: 1px solid #FBFCFE;
+  border-radius: 24px;
+}
+
+.intro__button:hover {
+  background-color: #fff;
+  color: #1F2C38;
+  cursor: pointer;
+}
+
+.intro__button:active {
+  background-color: #1B262F;
+  color: #B8BCC0;
+  border: solid 2px #B8BCC0;
+}
+
+@include breakpoint-down(962px) {
+  .container__inner-intro{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .intro{
+    background-image: url("../../img/circlle.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .intro__componies{
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+
+  .intro__text{
+    text-align: center;
+  }
+
+  .intro__heading {
+    text-align: center;
+    margin-bottom: -2px;
+  }
+
+  .intro__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #1B262F;
+    margin-top: 30px;
+  }
+}
+
+@include breakpoint-down(560px) {
+  .intro__componies {
+    display: flex;
+    flex-direction: unset;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .intro__text {
+    padding-bottom: 30px;
+  }
+
+  .intro__links {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .intro__links--last {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    
+  }
+}
